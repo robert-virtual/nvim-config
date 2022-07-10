@@ -35,6 +35,7 @@ nnoremap <leader>fl <cmd>Telescope live_grep<cr>
 
 " File Explorer
 nnoremap <leader>e <cmd>Neotree toggle<cr>
+nnoremap <leader>g <cmd>Neotree git_status<cr>
 
 
 " buffers
