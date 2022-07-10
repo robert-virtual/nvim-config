@@ -150,5 +150,5 @@ require('packer-mappings')
 require('lsp-insta-maps')
 require('term-maps')
 require('3sitter')
-require('line')
+require('eviline') -- change to 'line' to use other line style
 require('folds')
