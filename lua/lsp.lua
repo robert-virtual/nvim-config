@@ -26,7 +26,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>lr', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>la', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>lf', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<space>lf', vim.lsp.buf.format { async = true }, bufopts)
 end
 
 -- lsp key maps
@@ -40,30 +40,30 @@ local lspconfig = require('lspconfig')
 -- local lsp_installer = require('nvim-lsp-installer')
 
 local servers = {
-'clangd',
-'cssls',
-'dockerls',
-'golangci_lint_ls',
-'gopls',
-'graphql',
-'html',
-'intelephense',
-'phpactor',
-'prismals',
-'pyright',
-'rust_analyzer',
-'sumneko_lua',
-'svelte',
-'tailwindcss',
-'tsserver',
-'vimls',
-'volar',
-'yamlls'
+  'clangd',
+  'cssls',
+  'dockerls',
+  'golangci_lint_ls',
+  'gopls',
+  'graphql',
+  'html',
+  'intelephense',
+  'phpactor',
+  'prismals',
+  'pyright',
+  'rust_analyzer',
+  'sumneko_lua',
+  'svelte',
+  'tailwindcss',
+  'tsserver',
+  'vimls',
+  'volar',
+  'yamlls'
 }
 
 lspconfig['emmet_ls'].setup {
   on_attach = on_attach,
-  filetypes = { "php","html", "css" },
+  filetypes = { "php", "html", "css" },
   capabilities = capabilities,
 }
 
