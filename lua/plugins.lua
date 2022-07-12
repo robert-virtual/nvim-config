@@ -11,7 +11,9 @@ require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-
+  use {
+    'Shatur/neovim-session-manager'
+  }
   -- folds
   use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
@@ -72,9 +74,9 @@ require('packer').startup(function()
 
 
   -- language server protocol (auto completado)
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use {
-    "williamboman/nvim-lsp-installer"
+    'williamboman/nvim-lsp-installer',
+    'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   }
 
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin

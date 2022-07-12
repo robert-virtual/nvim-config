@@ -37,10 +37,38 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 local lspconfig = require('lspconfig')
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local lsp_installer = require('nvim-lsp-installer')
+-- local lsp_installer = require('nvim-lsp-installer')
 
-for _, lsp in ipairs(lsp_installer.get_installed_servers()) do
-  lspconfig[lsp.name].setup {
+local servers = {
+'clangd',
+'cssls',
+'dockerls',
+'golangci_lint_ls',
+'gopls',
+'graphql',
+'html',
+'intelephense',
+'phpactor',
+'prismals',
+'pyright',
+'rust_analyzer',
+'sumneko_lua',
+'svelte',
+'tailwindcss',
+'tsserver',
+'vimls',
+'volar',
+'yamlls'
+}
+
+lspconfig['emmet_ls'].setup {
+  on_attach = on_attach,
+  filetypes = { "php","html", "css" },
+  capabilities = capabilities,
+}
+
+for _, lsp in ipairs(servers) do -- lsp_installer.get_installed_servers()
+  lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
