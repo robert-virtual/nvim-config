@@ -2,7 +2,9 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 source ~/.config/nvim/.vimrc
+
 lua require('plugins')
+
 set clipboard+=unnamedplus
 set mouse=a
 colorscheme vscode 

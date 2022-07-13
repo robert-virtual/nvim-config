@@ -164,3 +164,4 @@ require('3sitter')
 require('eviline') -- change to 'line' to use other line style
 require('folds')
 require('sessions')
+require('icons')
