@@ -13,9 +13,9 @@
 
 ## Telescope
 
-![Tabs](./screenshots/tabs.png)
+![Tabs](./screenshots/telescope.png)
 
 
 ## Terminal
 
-![Tabs](./screenshots/tabs.png)
+![Tabs](./screenshots/terminal.png)
