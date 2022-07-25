@@ -1,4 +1,3 @@
--- This file is loaded by calling `lua require('plugins')` from  init.vim
 local use = require('packer').use
 
 require('packer').startup(function()
@@ -6,6 +5,8 @@ require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   use 'nvim-telescope/telescope-fzy-native.nvim'
+  -- icons
+  use 'kyazdani42/nvim-web-devicons'
 
   use {
     'nvim-telescope/telescope.nvim',
@@ -150,18 +151,18 @@ require('packer').startup(function()
   }
 end)
 
-require('lsp')
-require('tlescop')
-require('gitsigns').setup()
-require('neo3')
-require('lsp-auto-install')
-require('buffline')
-require('smart-wins')
-require('packer-mappings')
-require('lsp-insta-maps')
-require('term-maps')
-require('3sitter')
-require('eviline') -- change to 'line' to use other line style
-require('folds')
-require('sessions')
-require('icons')
+-- require('lsp')
+-- require('dev-icons')
+-- require('tlescop')
+-- require('gitsigns').setup()
+-- require('neo3')
+-- require('lsp-auto-install')
+-- require('buffline')
+-- require('smart-wins')
+-- require('packer-mappings')
+-- require('lsp-insta-maps')
+-- require('term-maps')
+-- require('3sitter')
+-- require('eviline') -- change to 'line' to use other line style
+-- require('folds')
+-- require('sessions')

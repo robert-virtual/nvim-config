@@ -41,6 +41,7 @@ local lspconfig = require('lspconfig')
 
 local servers = {
   'clangd',
+  'csharp_ls',
   'cssls',
   'dockerls',
   'golangci_lint_ls',
@@ -63,7 +64,7 @@ local servers = {
 
 lspconfig['emmet_ls'].setup {
   on_attach = on_attach,
-  filetypes = { "php", "html", "css" },
+  filetypes = { "php", "html"},
   capabilities = capabilities,
 }
 
