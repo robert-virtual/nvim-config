@@ -67,7 +67,7 @@ require("neo-tree").setup({
         untracked = "U", --
         ignored   = "I",
         unstaged  = "A",
-        staged    = "",
+        staged    = "C",
         conflict  = "",
       }
     },
