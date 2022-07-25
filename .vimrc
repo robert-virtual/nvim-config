@@ -45,6 +45,7 @@ imap jj <Esc>
 nnoremap <leader>w <cmd>w <cr>
 nnoremap <leader>q :qa <CR>
 nnoremap <leader>Q :qa! <CR>
+nnoremap <leader>h :set nohlsearch <CR>
 
 " source
 nnoremap <leader>sv <cmd>so ~/.config/nvim/init.vim <cr>
