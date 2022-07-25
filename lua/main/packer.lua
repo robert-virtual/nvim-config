@@ -151,18 +151,3 @@ require('packer').startup(function()
   }
 end)
 
--- require('lsp')
--- require('dev-icons')
--- require('tlescop')
--- require('gitsigns').setup()
--- require('neo3')
--- require('lsp-auto-install')
--- require('buffline')
--- require('smart-wins')
--- require('packer-mappings')
--- require('lsp-insta-maps')
--- require('term-maps')
--- require('3sitter')
--- require('eviline') -- change to 'line' to use other line style
--- require('folds')
--- require('sessions')
