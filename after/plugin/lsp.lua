@@ -59,7 +59,8 @@ local servers = {
   'tsserver',
   'vimls',
   'volar',
-  'yamlls'
+  'yamlls',
+  'dartls',
 }
 
 lspconfig['emmet_ls'].setup {
